@@ -1,11 +1,4 @@
-gunicorn
-gspreas
-click
-dnspython
 Flask
-Flask-Mail
-itsdangerous
-Jinja2
-MarkupSafe
-Werkzeug
+gspread
 oauth2client
+pandas
