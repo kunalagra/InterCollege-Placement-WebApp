@@ -1,4 +1,6 @@
 Flask
+flask_mail
 gspread
 oauth2client
 pandas
+gunicorn
