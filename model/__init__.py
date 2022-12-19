@@ -91,7 +91,7 @@ def braAyear():
     df=df[1:]
     dff = df.groupby(["Graduation Year","Placed"]).size().to_frame('Count').reset_index()
     dff= dff.pivot_table('Count',['Graduation Year'],'Placed').reset_index()
-    print(dff.to_dict('list'))
+    #print(dff.to_dict('list'))
     return dff.to_dict('list')
 
 def branccurStat():
@@ -107,7 +107,7 @@ def branccurStat():
     df_g.drop('Gdy',axis=1,inplace=True)
 
     df_g=df_g.groupby('Branch').count().reset_index()
-    print(df_g.to_dict('list'))
+    #print(df_g.to_dict('list'))
     return df_g.to_dict('list')
 
 def updStud():
