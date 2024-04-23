@@ -1,53 +1,71 @@
-# InterCollege Placement Web App
+<h1 align="center">
+  <br>
+  <a href="https://intercollege-placement-crud.onrender.com/"><img src="https://github.com/kunalagra/InterCollege-Placement-WebApp/blob/master/static/img/undraw_posting_photo.svg" alt="InterCollege Placement Web App" width="200"></a>
+  <br>
+  InterCollege Placement Web App
+  <br>
+</h1>
 
-Welcome to the InterCollege Placement WebApp! This application is designed to empower college administrators to efficiently manage and contribute placement data for individual students. By centralizing this information, the project aims to provide the stakeholders with valuable insights into the state of placements across the colleges in India.
+<h4 align="center">The college data aggregator</h4>
 
-## Table of Contents
+<p align="center">
+  <a href="#key-features">Key Features</a> •
+  <a href="#how-to-use">How To Use</a> •
+  <a href="#credits">Credits</a> •
+  <a href="#license">License</a>
+</p>
 
-- [Features](#features)
-- [Installation](#installation)
-- [Tech Stack](#tech-stack)
-- [License](#license)
+![screenshot](https://raw.githubusercontent.com/kunalagra/InterCollege-Placement-WebApp/master/static/img/screenshot.png)
 
-## Features
+## Key Features
 
 1. **User-friendly Interface**: Intuitive design to make it easy for college administrators to add and manage placement data.
-
 2. **Secure Authentication**: Ensure data integrity and privacy with secure authentication mechanisms for authorized access.
-
 3. **Placement Data Entry**: Streamlined forms for administrators to enter/update student data.
-
 4. **Data Visualization**: Dashboards to visualize placement trends and statistics.
 
-## Installation
 
-1. Clone the repository to your local machine:
+## How To Use
 
-   ```bash
-   git clone https://github.com/kunalagra/InterCollege-Placement-WebApp.git
-   ```
+To clone and run this application, you'll need [Git](https://git-scm.com) & [Python](https://www.python.org/) installed. From your command line:
 
-2. Install the required dependencies:
+```bash
+# Clone this repository
+$ git clone https://github.com/kunalagra/InterCollege-Placement-WebApp/
 
-   ```bash
-   cd InterCollege-Placement-WebApp
-   pip install -r requirements.txt
-   ```
+# Go into the repository
+$ cd InterCollege-Placement-WebApp
 
-3. Configure the database connection by updating the `database.py` file and creating ServiceAccount with required permission.
+# Install dependencies
+$ pip install -r requirements.txt
 
-4. Start the application:
+# Rename .env.example to .env
+$ mv .env.example .env
 
-   ```bash
-    python app.py
-   ```
+# Run the server
+$ flask run 
+```
+> [!IMPORTANT]  
+> Populate your .env keys with their respective values. 
 
-## Tech Stack
+> [!NOTE]
+> If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
 
-- Backend: Flask, gspread (Google Sheets), pandas
-- Frontend: HTML, CSS, Bootstrap, jQuery
+## Credits
+
+This software uses the following packages:
+
+- [Python](https://www.python.org/)
+- [Bootstrao](https://react.dev/)
+- Built for SIH'22
+
+
+## You may also like...
+
+- [SumUp](https://github.com/kunalagra/SumUp) - Summarize TEAMs Meeting
+- [Codegamy](https://github.com/kunalagra/MediCall) - AIO Digital Hospital
 
 ## License
 
-This project is licensed under the [GNU AGPL v3](LICENSE.md). See the [LICENSE.md](LICENSE.md) file for details.
-Based on [Flask SB Admin](https://github.com/app-generator/flask-sb-admin)
+AGPL-3
+
